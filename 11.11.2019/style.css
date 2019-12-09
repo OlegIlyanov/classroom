@@ -1,0 +1,19 @@
+#div1 {
+  background: red;
+  background: linear-gradient(to bottom, #FF0000 , #FFA500, #FFFF00, #008000, #00FFFF, #0000FF, #800080);
+  border-radius: 6px;
+  height: 200px;
+}
+#div2 {
+  background: red;
+  background: linear-gradient(to bottom,
+  #FF0000 0, #FF0000 10px,
+  #FFA500 10px, #FFA500 20px,
+  #FFFF00 20px, #FFFF00 30px,
+  #008000 30px, #008000 40px,
+  #00FFFF 40px, #00FFFF 50px,
+  #0000FF 50px, #0000FF 60px,
+  #800080 60px, #800080);
+  border-radius: 6px;
+  height: 70px;
+}

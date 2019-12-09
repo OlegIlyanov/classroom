@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Фотогалерея</title>
+    <style>
+        .slide {
+            display: none;
+            position: relative;
+            left: 30px;
+            width: 653px;
+        }
+        #one:checked~#slider>.slide:nth-child(1) {
+            display: block;
+        }
+        #two:checked~#slider>.slide:nth-child(2) {
+            display: block;
+        }
+        #three:checked~#slider>.slide:nth-child(3) {
+            display: block;
+        }
+        #four:checked~#slider>.slide:nth-child(4) {
+            display: block;
+        }
+        #five:checked~#slider>.slide:nth-child(5) {
+            display: block;
+        }
+        #three:checked~#slider>.pins>label[for=three]{
+            background-color: red;
+        }
+        
+        .prevSlide::before {
+			display: block;
+			content: "";
+			border: 20px solid transparent;
+			border-right: 20px solid black;
+			position: absolute;
+			left: -45px;
+			top:160px;
+		}
+		.nextSlide::after {
+			display: block;
+			content: "";
+			border: 20px solid transparent;
+			border-left: 20px solid black;
+			position: absolute;
+			right: 45px;
+			top: 160px;
+		}
+
+    </style>
+</head>
+<body>
+    <h1>добавить стили и расставить for и src так, чтобы работала фотогаллерея</h1>
+	<input type="radio" id="one" name="switch">
+	<input type="radio" id="two" name="switch">
+	<input type="radio" id="three" name="switch">
+	<input type="radio" id="four" name="switch">
+	<input type="radio" id="five" name="switch">
+	<div id="slider">
+		<section class="slide">
+			<img src=https://i.pinimg.com/564x/3f/ae/37/3fae37d55570407e8dfd301f9b59783a.jpg>
+			<label for="five" class="prevSlide"></label>
+			<label for="two" class="nextSlide"></label>
+		</section>
+		<section class="slide">
+			<img src="https://i.pinimg.com/564x/64/53/c1/6453c1c0323ae30c5dce99f4e265e7ee--vw-vento-volkswagen-golf.jpg">
+			<label for="one" class="prevSlide"></label>
+			<label for="three" class="nextSlide"></label>
+		</section>
+		<section class="slide">
+			<img src="https://i.pinimg.com/564x/82/f5/89/82f589f46b0c224427c6ccd36d510be3.jpg">
+			<label for="two" class="prevSlide"></label>
+			<label for="four" class="nextSlide"></label>
+		</section>
+		<section class="slide">
+			<img src="https://i.pinimg.com/564x/20/e6/6c/20e66c9888d03a6f36bd3c1689a10b37--golf-mk-volkswagen-golf.jpg">
+			<label for="three" class="prevSlide"></label>
+			<label for="five" class="nextSlide"></label>
+		</section>
+		<section class="slide">
+			<img src="https://i.pinimg.com/564x/ff/46/79/ff4679179c1488065137d39fed94a1dc--golf-jetta-golf-mk.jpg">
+			<label for="five" class="prevSlide"></label>
+			<label for="one" class="nextSlide"></label>
+		</section>
+		<div class="pins">
+			<label for="one"></label>
+			<label for="two"></label>
+			<label for="three"></label>
+			<label for="four"></label>
+			<label for="five"></label>
+		</div>
+	</div>
+</body>
+
+</html>

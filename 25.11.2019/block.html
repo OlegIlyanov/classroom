@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body,ul {
+            margin: 0;
+        } 
+        body>* { 
+            min-width: 120px;
+        }
+        header {
+            background-color: red;
+            height:150px;
+        }
+        header li {
+            float: left;
+            list-style: none;
+            margin-right: 10px;
+            margin-top: 70px;
+        }
+        header+div {
+            height: 200px;
+            background-color: orange;
+            float: left;
+            width: calc(100%/ 5);
+            margin-right: 20px;
+        }
+        header+div+div {
+            height: 120vmin;
+            background-color: aqua;
+            float: left;
+            width: calc(100%/ 1.82);
+            margin-right: 20px;
+        }
+        header+div+div+div {
+            height: 200px;
+            background-color: magenta;
+            float: left;
+            width: calc(100%/ 5);
+        } 
+        #futer {
+            clear: both;
+            background: lime;
+            height:200px;
+        }
+    </style>
+</head>
+<body>
+    <header> Шапка сайта
+        <ul>
+        <li> Пункт 1 </li>
+        <li> Пункт 2 </li>
+        <li> Пункт 3 </li>
+        <li> Пункт 4 </li>
+        <li> Пункт 5 </li>
+        <li> Пункт 6 </li>
+        <li> Пункт 7 </li>
+        </ul>
+        </header>
+    <div> Боковое меню
+        <li> Пункт 1 </li>
+        <li> Пункт 2 </li>
+        <li> Пункт 3 </li>
+        <li> Пункт 4 </li>
+        <li> Пункт 5 </li>
+        <li> Пункт 6 </li>
+        <li> Пункт 7 </li>
+    </div>
+    <div> Контент </div>
+    <div> Колонка с каким-то контентом </div>
+    <ul id="futer"> Футер</ul>
+</body>
+</html>
